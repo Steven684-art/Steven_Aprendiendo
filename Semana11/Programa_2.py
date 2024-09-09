@@ -5,28 +5,22 @@ matriz = [
     [7, 3, 9]
 ]
 
-# Definimos la función de ordenación
-def ordenar_fila(matriz, fila):
-    # Utilizamos el algoritmo Bubble Sort para ordenar la fila
-    for i in range(len(matriz[fila])):
-        for j in range(len(matriz[fila]) - 1):
-            if matriz[fila][j] > matriz[fila][j + 1]:
-                # Intercambiamos los elementos
-                matriz[fila][j], matriz[fila][j + 1] = matriz[fila][j + 1], matriz[fila][j]
-    return matriz
+# Definimos la función de búsqueda
+def buscar_valor(matriz, valor):
+    for i in range(len(matriz)):
+        for j in range(len(matriz[i])):
+            if matriz[i][j] == valor:
+                return (i, j)  # Devolvemos la posición del valor
+    return None  # Devolvemos None si no se encuentra el valor
 
-# Definimos la fila a ordenar
-fila_a_ordenar = 1
+# Definimos el valor a buscar
+valor_a_buscar = 6
 
-# Mostramos la matriz original
-print("Matriz original:")
-for fila in matriz:
-    print(fila)
+# Llamamos a la función de búsqueda
+posicion = buscar_valor(matriz, valor_a_buscar)
 
-# Llamamos a la función de ordenación
-matriz_ordenada = ordenar_fila(matriz, fila_a_ordenar)
-
-# Mostramos la matriz con la fila ordenada
-print("\nMatriz con la fila ordenada:")
-for fila in matriz_ordenada:
-    print(fila)
+# Mostramos el resultado
+if posicion is not None:
+    print(f"El valor {valor_a_buscar} se encontró en la posición ({posicion[0]}, {posicion[1]})")
+else:
+    print(f"El valor {valor_a_buscar} no se encontró en la matriz")
