@@ -36,7 +36,7 @@ for ciudades in  range(len(temperatura_semana)):  #El bucle ciudades va a recorr
     if ciudad == ciudad: #Comparamos si al recorrer la lista nuestro numero es igual al de ciudad que declaramos
         for semanas in range (len(temperatura_semana[ciudad])):  # Bucle semanas va a recorrer dentro de nuestro bucle ciudades
             if semanas == semana : #Comparamos si al recorrer la lista nuestro numero es igual al de semanas que declaramos
-                for temp in range (len(temperatura_semana[ciudad][semanas])):  # Este bulce temp va a recorrer las temperaturas
+                for temp in range (len(temperatura_semana[ciudad][semanas])):  # Este bucle temp va a recorrer las temperaturas
                         suma_total += temperatura_semana[ciudad][semanas][temp] # Sumamos las temperaturas de nuestra lista
                         cantidad_total += 1 #Sumamos en 1 nuestro contador
 
@@ -62,7 +62,7 @@ for ciudades in  range(len(temperatura_semana)):  #El bucle ciudades va a recorr
     if ciudad == ciudad: #Comparamos si al recorrer la lista nuestro numero es igual al de ciudad que declaramos
         for semanas in range (len(temperatura_semana[ciudad])):  # Bucle semanas va a recorrer dentro de nuestro bucle ciudades
             if semanas == semana : #Comparamos si al recorrer la lista nuestro numero es igual al de semanas que declaramos
-                for temp in range (len(temperatura_semana[ciudad][semanas])):  # Este bulce temp va a recorrer las temperaturas
+                for temp in range (len(temperatura_semana[ciudad][semanas])):  # Este bucle temp va a recorrer las temperaturas
                         suma_total += temperatura_semana[ciudad][semanas][temp] # Sumamos las temperaturas de nuestra lista
                         cantidad_total += 1 #Sumamos en 1 nuestro contador
 
