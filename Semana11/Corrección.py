@@ -1,6 +1,6 @@
 # Definimos la matriz bidimensional
 matriz = [
-    [5, 2, 8],
+    [5, 1, 8],
     [4, 1, 6],
     [7, 3, 9]
 ]
